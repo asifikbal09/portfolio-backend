@@ -12,7 +12,7 @@ app.get('/', (req:Request, res:Response) => {
   res.send('Hello World!')
 })
 
-app.post("/contact",async(req,res)=>{
+app.post('/contact',async(req,res)=>{
     const { name, email, message } = req.body;
 
     console.log(config.userMail,config.mailPass)
